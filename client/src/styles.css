@@ -1,0 +1,131 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f4f5f7;
+  color: #222;
+}
+
+a { color: #1a5fb4; }
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+header.app-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.auth-form input {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+button, .btn {
+  background: #1a5fb4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button.secondary {
+  background: #555;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.danger {
+  background: #a51d2d;
+}
+
+.error {
+  color: #a51d2d;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.ok {
+  color: #1a7f37;
+  font-size: 0.9rem;
+}
+
+select {
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+table.deals {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+table.deals th,
+table.deals td {
+  text-align: left;
+  padding: 0.55rem 0.4rem;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+table.deals th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.muted { color: #666; font-size: 0.85rem; }
+
+.tabs button {
+  background: #e8e8e8;
+  color: #222;
+  margin-right: 0.25rem;
+}
+
+.tabs button.active {
+  background: #1a5fb4;
+  color: #fff;
+}
